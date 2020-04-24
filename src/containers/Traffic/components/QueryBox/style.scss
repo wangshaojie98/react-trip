@@ -1,0 +1,35 @@
+.queryBox {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 30px #929090;
+  background: #ffffff;
+  padding: 10px;
+  .queryBox_box {
+    display: flex;
+    .queryBox_search{
+      border: none;
+      border-bottom: 1px solid gray;
+      flex-grow: 1;
+      outline: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+    }
+    .queryBox_btn {
+      margin-left: 5px;
+      margin-top: 10px;
+      width: 70px;
+      height: 45%;
+      // border-radius: 10px;
+      // position: absolute;
+      // top: 5%;
+      // right: 10px;
+      //   transform: translateY(-50%);
+      // z-index: 100;
+    }
+  }
+
+}

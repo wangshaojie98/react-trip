@@ -1,0 +1,32 @@
+.userHeader {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 4px #cccbcb;
+
+  .userHeader_avatarBox {
+    width: 80px;
+    height: 80px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      box-shadow: 0 0 4px #cccbcb;
+    }
+  }
+
+  .userHeader_basic {
+    padding-left: 10px;
+    .userHeader_name {
+      font-weight: bold;
+    }
+
+    .userHeader_username {
+      font-size: 12px;
+    }
+  }
+}

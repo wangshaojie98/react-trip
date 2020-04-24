@@ -1,0 +1,29 @@
+.login {
+  position: fixed;
+  z-index: 11;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+    .login-btnBox {
+      width: 90%;
+    }
+    .login-btn {
+      margin-top: 50px;
+    }
+  }
+  
+}

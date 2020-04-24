@@ -1,0 +1,28 @@
+.confirmModal {
+  width: 80vw;
+  .confirmModal_list {
+    font-size: 14px;
+    line-height: 18px;
+
+    .am-list-content {
+      flex: none;
+    font-size: 14px;
+    line-height: 18px;
+    }
+    .am-list-extra {
+      flex: 1;
+    line-height: 18px;
+
+    font-size: 14px;
+
+    }
+    .am-list-item .am-input-label.am-input-label-5 {
+      width: 30px !important;
+    font-size: 14px;
+
+    }
+    .am-list-item .am-input-control input {
+      font: 14px !important;
+    }
+  }
+}

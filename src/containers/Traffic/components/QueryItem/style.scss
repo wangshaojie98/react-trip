@@ -1,0 +1,18 @@
+.queryItem {
+
+
+  -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    color: #111a34;
+    font-size: 19px;
+    line-height: 1.2;
+    
+    .queryItem_name{
+    line-height: 1.2;
+    }
+    .queryItem_address{
+      font-size: 12px;
+      color: #858B9C
+    }
+}

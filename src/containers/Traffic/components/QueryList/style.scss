@@ -1,0 +1,16 @@
+.queryList {
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all .3s;
+  transform: translateY(200%);
+  position: absolute;
+  left: 0;
+  top: 37.333vw;
+  width: 100%;
+  height: calc(100% - 37.333vw);
+  overflow: auto;
+  background: hsla(0,0%,100%,.88235);
+}
+#queryList {
+  transform: translateY(0);
+}

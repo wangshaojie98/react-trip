@@ -1,0 +1,16 @@
+.trend {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #trend_echart {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+  }
+}

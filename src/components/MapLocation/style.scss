@@ -1,0 +1,126 @@
+#mapLocation {
+	height: calc(100vh - 50px);
+}
+#mapLocation_container {
+	height: 100%;
+}
+.mapLocation_startBox {
+	display: flex;
+	justify-content: center;
+}
+
+.mapLocation_startBtn {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: #57c595;
+	position: fixed;
+	bottom: 100px;
+	z-index: 10003;
+	/* left: calc(50%-100px); */
+	text-align: center;
+	line-height: 100px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	box-shadow: 0px 8px 30px #afaeae;
+}
+
+.mapLocation_startBtn:hover {
+	cursor: pointer;
+}
+
+.mapLocation_startGo {
+	position: fixed;
+	z-index: 10002;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  
+  .mapLocation_startGoTop {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 35px;
+    vertical-align: bottom;
+    font-style: oblique;
+  
+    span {
+      font-size: 100px;
+      font-weight: bold;
+    }
+  }
+
+  .mapLocation_startGoDetail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    font-style: oblique;
+    height:70px;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    span:nth-child(1) {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    span:nth-child(3) {
+      font-size: 24px;
+      font-style: initial;
+    }
+  }
+
+  .mapLocation_markText {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 24px;
+    color: #FFF;
+    display: flex;
+    label {
+      padding-right: 10px;
+    }
+    input {
+      flex-grow: 1;
+      font-size: 20px
+    }
+  }
+}
+
+#mapLocation_startGo {
+  transition: all 0.4s;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 50px #afaeae;
+  .mapLocation_startGoTop {
+    margin-top: 1%;
+    font-size: 30px;
+    span {
+      font-size: 100px;
+    }
+  }
+  .mapLocation_startGoDetail {
+    margin-top: 1%;
+    p {
+      width: 100%;
+      text-align: center;
+      span:nth-child(1) {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      span:nth-child(3) {
+        font-size: 24px;
+        font-style: initial;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.userInfo {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 4px #cccbcb;
+  flex-direction: column;
+
+  .userInfo_content {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    li {
+      .myLink {
+        color: black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .userInfo_iconTitle {
+        padding-top: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}

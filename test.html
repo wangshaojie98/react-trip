@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button id="start">开始</button>
+  <button id="end">结束</button>
+  <button id="result">结果</button>
+  <button id='position'>定位</button>
+  <p id="posResult">定位结果：</p>
+  <p id="watchPosResult">监听定位结果：</p>
+
+  <script>
+    const resultArr = [];
+    const start = document.getElementById('start')
+    const end = document.getElementById('end')
+    const result = document.getElementById('result')
+    const position = document.getElementById('position')
+    let id;
+
+    start.addEventListener('click', e => {
+      id = navigator.geolocation.watchPosition(success, error)
+    })
+
+    end.addEventListener('click', e => {
+      navigator.geolocation.clearWatch(id)
+      alert(`清除${id}事件`)
+    })
+
+    result.addEventListener('click', e => {
+      alert(resultArr)
+    })
+
+    position.addEventListener('click', e => {
+      navigator.geolocation.getCurrentPosition(getPosition, getPositionErr)
+    })
+
+    function updatewatchPosResult(resultArr) {
+      const watchPosResult = document.getElementById('watchPosResult')
+      watchPosResult.innerHTML ='监听定位结果：' + resultArr.join(', ');
+    }
+
+    function success(pos) {
+      let crd = pos.coords;
+      resultArr.push(`(${crd.longitude}, ${crd.latitude})`);
+      updatewatchPosResult(resultArr);
+    }
+
+    function error(err) {
+      alert('监听定位失败，请尝试刷新浏览器')
+    }
+    
+    function getPosition(pos) {
+      updatePosEle(`${pos.coords.longitude}, ${pos.coords.latitude}`)
+    }
+
+    function updatePosEle(result) {
+      const ele = document.getElementById('posResult')
+      ele.innerHTML = '定位结果：' + result;
+    }
+
+    function getPositionErr(err) {
+      alert('定位失败', err.code, err.message)
+    }
+  </script>
+</body>
+</html>
